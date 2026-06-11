@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клинок, рассекающий демонов</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #e94560 0%, #ff6b6b 100%);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 6px #000;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .character-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 2px solid #e94560;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .character-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+        }
+        
+        .character-name {
+            font-size: 2rem;
+            color: #e94560;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .character-desc {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border-left: 5px solid #e94560;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            color: #e94560;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: #1a1a2e;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 3px solid #e94560;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            font-size: 1.1rem;
+        }
+        
+        .sword-icon {
+            font-size: 4rem;
+            text-align: center;
+            margin: 1rem 0;
+            color: #e94560;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚔️ КЛИНОК, РАССЕКАЮЩИЙ ДЕМОНОВ ⚔️</h1>
+        <p class="subtitle">Добро пожаловать в мир Танджиро и его друзей</p>
+    </header>
+    
+    <div class="container">
+        <div class="sword-icon">🗡️</div>
+        
+        <div class="main-content">
+            <div class="character-card">
+                <h3 class="character-name">Танджиро Камадо</h3>
+                <p class="character-desc">
+                    Главный герой, новый член Корпуса Истребителей Демонов. 
+                    Обладает невероятной силой и добрым сердцем. 
+                    Использует меч с черным клинком и технику Водного Течения.
+                </p>
+            </div>
+            
+            <div class="character-card">
+                <h3 class="character-name">Незуко Камадо</h3>
+                <p class="character-desc">
+                    Младшая сестра Танджиро, превращенная в демона.
+                  Несмотря на статус демона, сохраняет человеческие чувства. 
+                    Обладает мощной боевой силой и способностью к взрыву крови.
+                </p>
+            </div>
+            
+            <div class="character-card">
+                <h3 class="character-name">Зенису Асикага</h3>
+                <p class="character-desc">
+                    Истребитель демонов, использующий технику Ночного Течения. 
+                    Скрытный и загадочный, но невероятно сильный. 
+                    Его меч обладает уникальной способностью к разрушению.
+                </p>
+            </div>
+            
+            <div class="character-card">
+                <h3 class="character-name">Иносаке Хашибира</h3>
+                <p class="character-desc">
+                    Эмоциональный и энергичный истребитель демонов. 
+                    Использует технику Тигрового Течения и меч с двумя клинками. 
+                    Известен своим необычным характером и невероятной силой.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🌸 О АНИМЕ</h2>
+            <p>
+                «Клинок, рассекающий демонов» (Demon Slayer / Kimetsu no Yaiba) — японское аниме и манга 
+                в жанре приключений, фэнтези и сёнэн. История рассказывает о Танджиро Камадо, 
+                юноше, который становится истребителем демонов после того, как его семья убита, 
+                а младшая сестра превращена в демона.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>🔥 ОСНОВНЫЕ ТЕМЫ</h2>
+            <p>
+                Дружба, семья, борьба добра со злом, преодоление себя, честь и долг. 
+                Аниме сочетает захватывающие боевые сцены с глубокими эмоциональными моментами. 
+                Прекрасная анимация и музыка делают его одним из самых популярных аниме последних лет.
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Создано с любовью к аниме ⚔️ 2026</p>
+        <p>Клинок, рассекающий демонов © Gotouge Koyoharu</p>
+    </footer>
+</body>
+</html>
